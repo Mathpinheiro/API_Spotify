@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Artist Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Spotify Artist Analysis</h1>
+    
+    <h2>Artistas do gênero 'pop' ordenados por número de seguidores:</h2>
+    <ul>
+        {% for artist in pop_artists %}
+            <li>{{ artist.name }} - Seguidores: {{ artist.followers }} - Popularidade: {{ artist.popularity }}</li>
+        {% endfor %}
+    </ul>
+    
+    <h2>5 Gêneros mais comuns:</h2>
+    <ul>
+        {% for genre, count in common_genres %}
+            <li>{{ genre }} - Contagem: {{ count }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
