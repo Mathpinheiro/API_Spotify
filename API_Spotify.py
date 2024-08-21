@@ -103,7 +103,7 @@ if __name__ == '__main__':
 post_url = "https://psel-solution-automation-cf-ubqz773kaq-uc.a.run.app?access_token=bC2lWA5c7mt1rSPR"
 
 post_data = {
-    "github_url": "https://github.com/Mathpinheiro/API-SPOTIFY---MKS",
+    "github_url": "https://github.com/Mathpinheiro/API_Spotify",
     "name": "Matheus Pinheiro de Souza",
     "pop_ranking": [
         {"artist_name": artist['name'], "followers": artist['followers']} for artist in pop_artists_sorted
